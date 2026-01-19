@@ -202,13 +202,17 @@
 <body>
 
     <nav>
-        <a href="index.html" class="logo">
-            <img src="image/logo.png" alt="北平风物记" style="width: 40px; height: 40px; object-fit: contain;">
-            <span style="margin-left: 10px; font-family: var(--f-title); font-size: 1.5rem; color: var(--c-red);">北平风物记</span>
-        </a>
+        <a href="index.html" class="logo">北平风物记</a>
         <div class="menu">
             <a href="index.html" class="menu-item">首页</a>
-            <a href="map.html" class="menu-item">漫游地图</a>
+            <div class="menu-item">
+                漫游地图
+                <div class="dropdown">
+                    <a href="literature-route.html">城西 · 古塔书香</a>
+                    <a href="jiangnan-route.html">城北 · 江南遗梦</a>
+                    <a href="ditan-route.html">城北 · 地坛回响</a>
+                </div>
+            </div>
             <div class="menu-item">
                 路线策展
                 <div class="dropdown">
@@ -240,7 +244,8 @@
         <div class="article-block reveal">
             <div class="text-wrap">
                 <h3>序章：一座塔，一部立在地上的密语</h3>
-                <p><span class="drop-cap">站</span>在西四南大街的喧嚣里，抬头望见万松老人塔，八百余年的青砖八角密檐塔，谦卑地嵌在胡同肌理中，与百姓烟火为邻。塔主万松行秀是金元禅宗巨匠，其弟子耶律楚材——辅佐成吉思汗的一代名相，曾在此参学。</p>
+                <p><span class="drop-cap">站</span>在西四南大街的车马喧嚣里，抬头望见万松老人塔的身影时，时间会忽然慢下来。这座青砖垒砌的八角九级密檐塔，已经静立了八百多年。</p>
+                <p>真正的力量，来自于内心的秩序。在这里，你不必烧香，只需仰望——那座塔，本身就是一座指向精神高处的导航标。</p>
             </div>
             <div class="img-wrap">
                 <img src="image/wansongta.png" class="project-img" alt="万松老人塔">
@@ -250,7 +255,7 @@
         <div class="article-block reverse reveal">
             <div class="text-wrap">
                 <h3>第一章：塔下书局，呼吸着的记忆</h3>
-                <p>塔影所覆，便是正阳书局。推开不起眼的木门，仿佛跌进平行时空，这里是北京唯一专营北京地方文献的旧书店。泛黄的旧书、手绘地图、老照片，空气里弥漫着旧纸张与时光混合的芬芳。</p>
+                <p>塔影所覆，便是正阳书局。推开那扇不起眼的木门，仿佛跌进一个平行时空。这里可能是北京唯一一家专营北京地方文献的旧书店。空气里是旧纸张与时光混合的、略带潮气的芬芳。</p>
             </div>
             <div class="img-wrap">
                 <img src="image/zhengyangshuju.png" class="project-img" alt="正阳书局">
@@ -258,61 +263,20 @@
         </div>
 
         <div class="task-box reveal">
-            <div class="task-title">✉️ 漫步任务 · 书局探索</div>
+            <div class="task-title">✉️ 漫步任务 · 拾遗</div>
             <div class="task-content" id="task-text-1">"点击下方按钮，抽取你的书局探索任务"</div>
             <button class="btn-task" onclick="cycleTask(1)">抽取任务</button>
         </div>
 
         <div class="article-block reveal">
             <div class="text-wrap">
-                <h3>第二章：红楼一梦，从光影到纸页的轮回</h3>
-                <p>沿西安门大街西行不远，由红楼电影院改造的红楼公共藏书楼跃然眼前。1955年，它是首都第一家宽银幕立体声电影院；2018年，它转型为藏书楼，将放映机换成层层书格，延续着知识的生命。</p>
+                <h3>第二章：红楼一梦</h3>
+                <p>沿西安门大街西行不远，便是由红楼电影院改造而成的红楼公共藏书楼。它的前世，铭刻着几代北京人的集体记忆。走进大厅，高挑的空间、裸露的原结构、巨大的“书山”装置，充满工业感与仪式感。</p>
             </div>
             <div class="img-wrap">
                 <img src="image/honglou.png" class="project-img" alt="红楼藏书楼">
             </div>
         </div>
-
-        <div class="task-box reveal">
-            <div class="task-title">✉️ 漫步任务 · 红楼寻踪</div>
-            <div class="task-content" id="task-text-2">"点击下方按钮，抽取你的红楼探索任务"</div>
-            <button class="btn-task" onclick="cycleTask(2)">抽取任务</button>
-        </div>
-
-        <div class="article-block reverse reveal">
-            <div class="text-wrap">
-                <h3>尾声：三重时间的叠印</h3>
-                <p>从万松老人塔（凝固的时间），到正阳书局（呼吸的时间），再到红楼藏书楼（流动的时间），不到一公里的路线完成了一场精妙的时空折叠。文学是贯穿这三重时间的金线，让每一个地点都充满了精神的温度。</p>
-            </div>
-            <div class="img-wrap">
-                <img src="image/wenyuelou.png" class="project-img" alt="红楼藏书楼内部">
-            </div>
-        </div>
-
-        <!-- 文学交互小游戏 -->
-        <div class="article-block reveal" style="margin-top: 100px;">
-            <div class="text-wrap" style="grid-column: 1 / -1; text-align: center;">
-                <h3 style="text-align: center; border-left: none; display: inline-block; border-bottom: 4px solid var(--c-gold); padding-bottom: 10px; padding-left: 0;">📚 文学拼图游戏</h3>
-                <p style="margin-top: 30px; font-size: 1.2rem;">将打乱的诗句重新排列，拼出完整的文学经典片段</p>
-            </div>
-        </div>
-
-        <div class="article-block reveal" style="margin-bottom: 100px;">
-            <div class="text-wrap" style="grid-column: 1 / -1;">
-                <div id="poem-puzzle" style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <h4 id="puzzle-title" style="text-align: center; margin-bottom: 20px; color: var(--c-red);"></h4>
-                    <div id="puzzle-container" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px;"></div>
-                    <div id="puzzle-answer" style="text-align: center; margin-bottom: 20px; font-style: italic; color: var(--c-gray);"></div>
-                    <div style="display: flex; justify-content: center; gap: 20px;">
-                        <button id="start-puzzle" class="btn-task" style="background: var(--c-red); color: white; border: none; padding: 12px 30px; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">开始游戏</button>
-                        <button id="check-puzzle" class="btn-task" style="background: var(--c-gold); color: white; border: none; padding: 12px 30px; border-radius: 4px; cursor: pointer; transition: all 0.3s ease; display: none;">检查答案</button>
-                        <button id="reset-puzzle" class="btn-task" style="background: var(--c-gray); color: white; border: none; padding: 12px 30px; border-radius: 4px; cursor: pointer; transition: all 0.3s ease; display: none;">重新开始</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </section>
 
     <footer id="footer">
@@ -349,156 +313,6 @@
                 textEl.style.opacity = 1;
             }, 300);
         }
-        // --- 文学交互小游戏：诗歌拼图 ---        
-        // 诗歌数据
-        const poems = [
-            {
-                id: 1,
-                title: "万松老人塔·耶律楚材",
-                author: "元代诗人 耶律楚材",
-                content: [
-                    "阴山千里横东西",
-                    "秋声浩浩鸣秋溪",
-                    "万松岭上塔玲珑",
-                    "疑是浮屠入云际"
-                ]
-            },
-            {
-                id: 2,
-                title: "图书馆的诗",
-                author: "现代 博尔赫斯",
-                content: [
-                    "天堂应该是图书馆的模样",
-                    "在知识的海洋中徜徉",
-                    "每一本书都是一个世界",
-                    "每一页都藏着无限可能"
-                ]
-            }
-        ];
-
-        let currentPoem = null;
-        let selectedPieces = [];
-
-        // 初始化拼图游戏
-        function initPoemPuzzle() {
-            const startBtn = document.getElementById('start-puzzle');
-            const checkBtn = document.getElementById('check-puzzle');
-            const resetBtn = document.getElementById('reset-puzzle');
-
-            startBtn.addEventListener('click', startPuzzle);
-            checkBtn.addEventListener('click', checkPuzzle);
-            resetBtn.addEventListener('click', resetPuzzle);
-        }
-
-        // 开始游戏
-        function startPuzzle() {
-            // 随机选择一首诗
-            currentPoem = poems[Math.floor(Math.random() * poems.length)];
-            
-            // 更新标题
-            document.getElementById('puzzle-title').innerText = `${currentPoem.title} - ${currentPoem.author}`;
-            
-            // 打乱诗句顺序
-            const shuffledContent = [...currentPoem.content].sort(() => Math.random() - 0.5);
-            
-            // 创建拼图块
-            const puzzleContainer = document.getElementById('puzzle-container');
-            puzzleContainer.innerHTML = '';
-            
-            shuffledContent.forEach((line, index) => {
-                const piece = document.createElement('div');
-                piece.className = 'puzzle-piece';
-                piece.innerText = line;
-                piece.dataset.answer = line;
-                piece.style.cssText = `
-                    background: var(--c-paper);
-                    border: 2px solid var(--c-gray);
-                    border-radius: 8px;
-                    padding: 15px 25px;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    font-size: 1.1rem;
-                    font-family: var(--f-body);
-                    color: var(--c-ink);
-                    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-                `;
-                
-                // 添加点击事件
-                piece.addEventListener('click', () => selectPiece(piece));
-                
-                puzzleContainer.appendChild(piece);
-            });
-            
-            // 重置选择
-            selectedPieces = [];
-            document.getElementById('puzzle-answer').innerText = '';
-            
-            // 更新按钮显示
-            document.getElementById('start-puzzle').style.display = 'none';
-            document.getElementById('check-puzzle').style.display = 'inline-block';
-            document.getElementById('reset-puzzle').style.display = 'inline-block';
-        }
-
-        // 选择拼图块
-        function selectPiece(piece) {
-            // 如果已经选择了这个块，取消选择
-            const index = selectedPieces.indexOf(piece);
-            if (index > -1) {
-                selectedPieces.splice(index, 1);
-                piece.style.borderColor = 'var(--c-gray)';
-                piece.style.transform = 'scale(1)';
-            } else {
-                // 否则添加到选择列表
-                selectedPieces.push(piece);
-                piece.style.borderColor = 'var(--c-red)';
-                piece.style.transform = 'scale(1.05)';
-            }
-        }
-
-        // 检查答案
-        function checkPuzzle() {
-            // 检查是否选择了所有诗句
-            if (selectedPieces.length !== currentPoem.content.length) {
-                document.getElementById('puzzle-answer').innerText = `请选择所有${currentPoem.content.length}句诗句！`;
-                return;
-            }
-            
-            // 检查顺序是否正确
-            const userAnswer = selectedPieces.map(piece => piece.dataset.answer);
-            const isCorrect = JSON.stringify(userAnswer) === JSON.stringify(currentPoem.content);
-            
-            if (isCorrect) {
-                document.getElementById('puzzle-answer').innerText = '🎉 恭喜你，拼图成功！';
-                document.getElementById('puzzle-answer').style.color = 'var(--c-red)';
-                
-                // 高亮正确答案
-                selectedPieces.forEach(piece => {
-                    piece.style.background = 'var(--c-red)';
-                    piece.style.color = 'white';
-                    piece.style.borderColor = 'var(--c-red)';
-                });
-            } else {
-                document.getElementById('puzzle-answer').innerText = '💡 再试一次，顺序可能不对哦！';
-                document.getElementById('puzzle-answer').style.color = 'var(--c-gold)';
-            }
-        }
-
-        // 重置游戏
-        function resetPuzzle() {
-            selectedPieces = [];
-            document.getElementById('puzzle-container').innerHTML = '';
-            document.getElementById('puzzle-title').innerText = '';
-            document.getElementById('puzzle-answer').innerText = '';
-            
-            // 更新按钮显示
-            document.getElementById('start-puzzle').style.display = 'inline-block';
-            document.getElementById('check-puzzle').style.display = 'none';
-            document.getElementById('reset-puzzle').style.display = 'none';
-        }
-
-        // 初始化游戏
-        initPoemPuzzle();
-        
         // --- 音频控制逻辑 ---
 function toggleSound(audioId, btnElement) {
     const audio = document.getElementById(audioId);
